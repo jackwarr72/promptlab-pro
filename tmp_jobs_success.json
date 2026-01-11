@@ -1,0 +1,105 @@
+{
+  "total_count": 1,
+  "jobs": [
+    {
+      "id": 60021742414,
+      "run_id": 20890862656,
+      "workflow_name": "Deploy to GitHub Pages",
+      "head_branch": "main",
+      "run_url": "https://api.github.com/repos/jackwarr72/promptlab-pro/actions/runs/20890862656",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOQ3ki4s8AAAAN-ZMbTg",
+      "head_sha": "4ce19282c3ab4d7420d1a3b6fa83f57601598291",
+      "url": "https://api.github.com/repos/jackwarr72/promptlab-pro/actions/jobs/60021742414",
+      "html_url": "https://github.com/jackwarr72/promptlab-pro/actions/runs/20890862656/job/60021742414",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-01-11T06:33:13Z",
+      "started_at": "2026-01-11T06:33:16Z",
+      "completed_at": "2026-01-11T06:33:31Z",
+      "name": "build-and-deploy",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-01-11T06:33:16Z",
+          "completed_at": "2026-01-11T06:33:18Z"
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-01-11T06:33:18Z",
+          "completed_at": "2026-01-11T06:33:19Z"
+        },
+        {
+          "name": "Setup Node",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-01-11T06:33:19Z",
+          "completed_at": "2026-01-11T06:33:23Z"
+        },
+        {
+          "name": "Install dependencies",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-01-11T06:33:23Z",
+          "completed_at": "2026-01-11T06:33:25Z"
+        },
+        {
+          "name": "Build",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-01-11T06:33:25Z",
+          "completed_at": "2026-01-11T06:33:27Z"
+        },
+        {
+          "name": "Deploy to gh-pages branch",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-01-11T06:33:27Z",
+          "completed_at": "2026-01-11T06:33:28Z"
+        },
+        {
+          "name": "Post Setup Node",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11,
+          "started_at": "2026-01-11T06:33:28Z",
+          "completed_at": "2026-01-11T06:33:29Z"
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 12,
+          "started_at": "2026-01-11T06:33:29Z",
+          "completed_at": "2026-01-11T06:33:29Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 13,
+          "started_at": "2026-01-11T06:33:29Z",
+          "completed_at": "2026-01-11T06:33:29Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/jackwarr72/promptlab-pro/check-runs/60021742414",
+      "labels": [
+        "ubuntu-latest"
+      ],
+      "runner_id": 1000000036,
+      "runner_name": "GitHub Actions 1000000036",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    }
+  ]
+}

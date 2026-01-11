@@ -1,0 +1,11 @@
+# Wrangler config — fill in placeholders before publishing
+name = "promptlab-pro-generate"
+main = "worker.js"
+compatibility_date = "2026-01-11"
+# Set your Cloudflare account id here or via CI secrets
+account_id = "<YOUR_ACCOUNT_ID>"
+type = "javascript"
+
+# Optional build step (uncomment if you need to bundle)
+# [build]
+# command = "npm install && npm run build"
