@@ -1,0 +1,37 @@
+name: Diagnostic — Runner info
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  diagnostic:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Print runner info
+        run: |
+          echo "--- Runner info ---"
+          echo "RUNNER_OS=$RUNNER_OS"
+          echo "RUNNER_TEMP=$RUNNER_TEMP"
+          echo "RUNNER_TOOL_CACHE=$RUNNER_TOOL_CACHE"
+          echo "--- System ---"
+          uname -a || true
+          lsb_release -a || true
+          echo "--- Disk ---"
+          df -h || true
+          echo "--- Memory ---"
+          free -m || true
+          echo "--- Node / NPM ---"
+          node -v || true
+          npm -v || true
+          echo "--- Env vars (filtered) ---"
+          env | sort | grep -E "^(RUNNER|GITHUB|CI|USER|HOME|SHELL)=" || true
+
+      - name: Network check
+        run: |
+          echo "--- Curl GitHub API ---"
+          curl -v https://api.github.com || true
+          echo "--- DNS ---"
+          host github.com || true
