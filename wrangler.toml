@@ -1,0 +1,16 @@
+# Root Wrangler config to help Cloudflare Pages / CI deployments
+# This points to the worker script located in `workers/generate/` so running
+# `npx wrangler deploy` from the repo root will deploy the worker.
+
+name = "promptlab-pro-generate"
+main = "workers/generate/worker.js"
+compatibility_date = "2026-01-11"
+account_id = "<YOUR_ACCOUNT_ID>" # set via CI or fill locally
+type = "javascript"
+
+# If you need to deploy a directory of assets instead, uncomment and adjust:
+# [assets]
+#   directory = "./dist"
+
+# NOTE: The CI / Pages deploy environment should have CF_API_TOKEN and CF_ACCOUNT_ID
+# available as secrets or set the `account_id` here when running locally.
